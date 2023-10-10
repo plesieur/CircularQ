@@ -5,8 +5,8 @@ namespace CircularQ
     class QueueCircular
     {
         private int[] _qArray;
-        private int _front;
-        private int _rear;
+        private int _front;    //Head of the queue - Remove items from
+        private int _rear;     //Tail of the queue - Add items to
         private int _max;      //Size of the array that stores queue items
         private int _size;     //Number of items in the queue
 
