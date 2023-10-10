@@ -7,8 +7,8 @@ namespace CircularQ
         private int[] _qArray;
         private int _front;
         private int _rear;
-        private int _max;
-        private int _size;
+        private int _max;      //Size of the array that stores queue items
+        private int _size;     //Number of items in the queue
 
         //Size of queue passed as argument
         //Init queue to empty
