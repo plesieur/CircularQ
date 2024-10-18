@@ -30,19 +30,18 @@ namespace CircularQ
         {
             bool rv;
 
-            //Are we at the end of the Array?
-            if (_rear == _max - 1)
-            {
-                _rear = -1;  //Move to beginning
-            }
-
             //Are we full?
             if (_size == _max)
             {
                 rv = false;  //Yes
-            }
-            else
-            {
+            } else { 
+
+                //Are we at the end of the Array?
+                if (_rear == _max - 1)
+                {
+                    _rear = -1;  //Move to beginning
+                }
+
                 _rear++;
                 _qArray[_rear] = item;
                 _size++;
